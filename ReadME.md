@@ -16,6 +16,7 @@ Thus I decided it would be best to automate it using python and pyautogui.
 - Country field will always be CANADA
 - Province/ Territory will vary depending on the data in the .xlsx
     - use a python dictionary for the province codes
+    - can't search within the dropdown, you need to manually scroll/find/click on what you want
 - Use LocateOnScreen() to find the add and save address buttons
     - need to take screenshots of them and include their paths
 
