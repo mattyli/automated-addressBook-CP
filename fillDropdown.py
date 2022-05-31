@@ -13,12 +13,24 @@ def fillDropdown(tupleCoords, item, nonUniqueChar="N"):
         return
     else:
         # is item that begins with N (there are 5)
-        # handle the non unique, would use switch case, but python does not have this
-        # in python 3.10 they introduce match (essentially switchcase) but I do not have this
-        # will use if/elif instead
+        # handle the non unique, using match in python 3.10.4
 
-        
-
+        match fc:
+            case "NWT":
+                pg.locateCenterOnScreen() # find the NWT box
+                pg.click()
+            case "NU":
+                pg.locateCenterOnScreen()
+                pg.click()
+            case "NL":
+                pg.locateCenterOnScreen()
+                pg.click()
+            case "NB":
+                pg.locateCenterOnScreen()
+                pg.click()
+            case "NS":
+                pg.locateCenterOnScreen()
+                pg.click()
         return
 
 """
